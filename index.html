@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <title>Desafio 3</title>
+</head>
+
+<body>
+    <div id="container">
+
+
+        <div id="task-container">
+
+            <div class="title">
+
+                <svg class="head-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18 22.5H22.5M22.5 22.5H27M22.5 22.5V18M22.5 22.5V27M8 14H11C11.7956 14 12.5587 13.6839 13.1213 13.1213C13.6839 12.5587 14 11.7956 14 11V8C14 7.20435 13.6839 6.44129 13.1213 5.87868C12.5587 5.31607 11.7956 5 11 5H8C7.20435 5 6.44129 5.31607 5.87868 5.87868C5.31607 6.44129 5 7.20435 5 8V11C5 11.7956 5.31607 12.5587 5.87868 13.1213C6.44129 13.6839 7.20435 14 8 14V14ZM8 27H11C11.7956 27 12.5587 26.6839 13.1213 26.1213C13.6839 25.5587 14 24.7957 14 24V21C14 20.2044 13.6839 19.4413 13.1213 18.8787C12.5587 18.3161 11.7956 18 11 18H8C7.20435 18 6.44129 18.3161 5.87868 18.8787C5.31607 19.4413 5 20.2044 5 21V24C5 24.7957 5.31607 25.5587 5.87868 26.1213C6.44129 26.6839 7.20435 27 8 27ZM21 14H24C24.7957 14 25.5587 13.6839 26.1213 13.1213C26.6839 12.5587 27 11.7956 27 11V8C27 7.20435 26.6839 6.44129 26.1213 5.87868C25.5587 5.31607 24.7957 5 24 5H21C20.2044 5 19.4413 5.31607 18.8787 5.87868C18.3161 6.44129 18 7.20435 18 8V11C18 11.7956 18.3161 12.5587 18.8787 13.1213C19.4413 13.6839 20.2044 14 21 14V14Z"
+                        stroke="#18161F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span class="text">Add a task</span>
+
+            </div>
+
+            <form action="#" id="form">
+
+                <div id="input-task">
+                    <input type="text" id="input" placeholder="Describe your task" autofocus>
+                    <button type="submit" id="btn"> Create task</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div id="chart-container">
+
+            <div class="title">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3 9.5C3 8.672 3.672 8 4.5 8H12.5C13.328 8 14 8.672 14 9.5V14.5C14 15.328 13.328 16 12.5 16H4.5C4.10218 16 3.72064 15.842 3.43934 15.5607C3.15804 15.2794 3 14.8978 3 14.5V9.5ZM19 11.5C19 10.672 19.672 10 20.5 10H27.5C28.328 10 29 10.672 29 11.5V22.5C29 23.328 28.328 24 27.5 24H20.5C20.1022 24 19.7206 23.842 19.4393 23.5607C19.158 23.2794 19 22.8978 19 22.5V11.5ZM5 21.5C5 20.672 5.672 20 6.5 20H13.5C14.328 20 15 20.672 15 21.5V24.5C15 25.328 14.328 26 13.5 26H6.5C6.10218 26 5.72064 25.842 5.43934 25.5607C5.15804 25.2794 5 24.8978 5 24.5V21.5Z"
+                        stroke="#18161F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span class="text">Task chart</span>
+            </div>
+
+            <div id="task-list">
+                
+                <!-- html dinamico JS -->
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <template id="template">
+
+        <div class="task" id="divTask">
+            <div class=" inner-task" id="divInnerTask">
+                <img src="./assets/Frame.svg" class="check svg" id="check">
+                <p class="chart-text">Tarea</p>
+            </div>
+            <img src="./assets/remove.svg" class="remove svg" id="delete">
+        </div>
+    </template>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

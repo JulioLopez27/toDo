@@ -1,0 +1,184 @@
+/* 
+Font: Space grotesk
+colores:
+#18161f
+#262331
+#787490
+#d6d4e2
+#f5f4f6
+#FFFFFF
+#02B553
+#FF497D
+
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: rgb(231, 228, 228);
+}
+
+#container {
+    width: 1280px;
+    height: 720px;
+
+
+
+    box-sizing: border-box;
+}
+
+/* common spec */
+.title {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+
+
+
+#task-container {
+    margin: 72px 320px 72px 320px;
+}
+
+#input-task {
+    display: inline-flex;
+    gap: 16px;
+}
+
+#input {
+    box-sizing: border-box;
+    height: 56px;
+    width: 427px;
+
+    color: #000000;
+    border: 1px solid #d6d4e2;
+    border-radius: 16px;
+    outline: none;
+
+
+    padding: 16px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+
+#btn {
+    box-sizing: border-box;
+    height: 56px;
+    width: 152px;
+
+    color: #FFF;
+    border: 0 solid #02B553;
+    border-radius: 16px;
+    background-color: #02B553;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#btn:hover {
+    background-color: #07440c;
+    cursor: pointer;
+}
+
+#btn:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+/* ---------------------------------------------- */
+
+#chart-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 320px;
+}
+
+
+.task {
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 640px;
+    height: 72px;
+    margin-bottom: 16px;
+
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+}
+
+
+
+.inner-task {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.check-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.check {
+    width: 24px;
+    height: 24px;
+    margin: 0 27px;
+    cursor: pointer;
+}
+
+.chart-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.remove {
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+    display: inline-flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+/* checked */
+.checked {
+    text-decoration: line-through;
+    color: #02B553;
+}
+
+.task-checked {
+    border: 2px solid #02B553;
+}
+
+.no-task-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 27px;
+}
+.border{
+    border: 2px solid #e70606;
+}
